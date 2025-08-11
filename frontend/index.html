@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Patient Management System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar shadow-md sticky top-0">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 font-bold text-xl text-blue-600">
+                    <a href="/">PMS</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="nav-link font-semibold text-blue-600 border-blue-600">Home</a>
+                    <a href="/view.html" class="nav-link font-semibold text-gray-600">View Patients</a>
+                    <a href="/create.html" class="nav-link font-semibold text-gray-600">Add Patient</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="page-container text-center fade-in">
+        <div class="max-w-3xl mx-auto">
+            <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight">
+                Welcome to the Patient Management System
+            </h1>
+            <p class="mt-6 text-lg text-gray-700">
+                Efficiently manage all your patient records in one centralized, secure, and easy-to-use platform.
+            </p>
+            <div class="mt-10">
+                <a href="/view.html" class="bg-blue-600 text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300 text-lg">
+                    Get Started
+                </a>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

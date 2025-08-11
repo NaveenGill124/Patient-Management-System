@@ -1,0 +1,75 @@
+/* --- General Body and Background Styling --- */
+body {
+    font-family: 'Inter', sans-serif;
+    /* This adds a background image with a light overlay for readability */
+    background-image: 
+        linear-gradient(rgba(243, 244, 246, 0.95), rgba(243, 244, 246, 0.95)), 
+        url('https://images.pexels.com/photos/2631746/pexels-photo-2631746.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #1f2937; /* Default text color: dark gray */
+}
+
+/* --- Navigation Bar Styling --- */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(209, 213, 219, 0.5);
+}
+
+.nav-link {
+    transition: all 0.2s ease-in-out;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover {
+    color: #2563eb; /* blue-600 */
+    border-bottom-color: #2563eb;
+}
+
+/* --- Main Content Styling --- */
+.page-container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
+}
+
+/* --- Custom scrollbar for better aesthetics --- */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* --- Animation for modals and cards --- */
+.fade-in {
+    animation: fadeIn 0.4s ease-in-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Card Styling --- */
+.card {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+/* --- Form Styling --- */
+.form-container {
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+}

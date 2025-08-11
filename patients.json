@@ -1,0 +1,72 @@
+{
+  "P001": {
+    "name": "Ananya Sharma",
+    "city": "Guwahati",
+    "age": 28,
+    "gender": "female",
+    "height": 1.65,
+    "weight": 90.0,
+    "bmi": 33.06,
+    "verdict": "Obese"
+  },
+  "P002": {
+    "name": "Ravi Mehta",
+    "city": "Mumbai",
+    "age": 35,
+    "gender": "male",
+    "height": 1.75,
+    "weight": 85,
+    "bmi": 27.76,
+    "verdict": "Overweight"
+  },
+  "P003": {
+    "name": "Sneha Kulkarni",
+    "city": "Pune",
+    "age": 22,
+    "gender": "female",
+    "height": 1.6,
+    "weight": 45,
+    "bmi": 17.58,
+    "verdict": "Underweight"
+  },
+  "P004": {
+    "name": "Arjun Verma",
+    "city": "Bangalore",
+    "age": 40,
+    "gender": "male",
+    "height": 1.8,
+    "weight": 95,
+    "bmi": 29.32,
+    "verdict": "Overweight"
+  },
+  "P006": {
+    "name": "Kini",
+    "city": "Hansi",
+    "age": 23,
+    "gender": "female",
+    "height": 1.6,
+    "weight": 49.0,
+    "bmi": 19.14,
+    "verdict": "Normal"
+  },
+  "P008": {
+    "name": "Sudhir",
+    "city": "Hisar",
+    "age": 24,
+    "gender": "male",
+    "height": 1.78,
+    "weight": 76.0,
+    "bmi": 23.99,
+    "verdict": "Normal"
+  },
+  "P009": {
+    "name": "Naveen Gill",
+    "city": "Hisar",
+    "age": 25,
+    "gender": "male",
+    "height": 1.83,
+    "weight": 80.0,
+    "bmi": 23.89,
+    "verdict": "Normal"
+  }
+}

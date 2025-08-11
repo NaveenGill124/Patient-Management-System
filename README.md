@@ -25,7 +25,7 @@ Here's a look at the application in action.
 | Home Page                                                                                             | View Patients Page                                                                                               |
 | ----------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
 | ![Home Page Screenshot](./home.png)                            | ![View Page Screenshot](./view_patients.png)                                   |
-                             |
+| ![Add Patient Page Screenshot](./add_patient.png)                                                                                               |
 
 ---
 

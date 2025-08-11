@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Patients - PMS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar shadow-md sticky top-0">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 font-bold text-xl text-blue-600">
+                    <a href="/">PMS</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="/" class="nav-link font-semibold text-gray-600">Home</a>
+                    <a href="/view.html" class="nav-link font-semibold text-blue-600 border-blue-600">View Patients</a>
+                    <a href="/create.html" class="nav-link font-semibold text-gray-600">Add Patient</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="page-container fade-in">
+        <!-- Header -->
+        <header class="mb-8">
+            <h1 class="text-4xl font-bold text-gray-900">Patient Records</h1>
+            <p class="text-gray-600 mt-2">Browse, sort, and manage all patient data.</p>
+        </header>
+
+        <!-- Controls: Add Patient and Sorting -->
+        <div class="flex flex-wrap items-center justify-between mb-6 gap-4 card p-4 rounded-lg shadow">
+            <a href="/create.html" class="bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75 transition duration-200">
+                + Add New Patient
+            </a>
+            <div class="flex items-center gap-2">
+                <label for="sortBy" class="font-semibold">Sort By:</label>
+                <select id="sortBy" class="border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-blue-500">
+                    <option value="height">Height</option>
+                    <option value="weight">Weight</option>
+                    <option value="bmi">BMI</option>
+                </select>
+                <select id="sortOrder" class="border border-gray-300 rounded-lg p-2 focus:ring-2 focus:ring-blue-500">
+                    <option value="asc">Ascending</option>
+                    <option value="desc">Descending</option>
+                </select>
+                <button id="sortBtn" class="bg-gray-700 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:bg-gray-800">
+                    Sort
+                </button>
+            </div>
+        </div>
+
+        <!-- Patient Records Grid -->
+        <div id="patientGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <!-- Patient cards will be dynamically inserted here -->
+        </div>
+        
+        <!-- Loading Spinner -->
+        <div id="loading" class="text-center py-10 hidden">
+            <div class="card inline-block p-6 rounded-lg shadow-md">
+                <svg class="animate-spin h-8 w-8 text-blue-600 mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                <p class="mt-2 text-gray-600 font-semibold">Loading Patients...</p>
+            </div>
+        </div>
+
+        <!-- No Patients Message -->
+        <div id="noPatientsMessage" class="text-center py-10 card rounded-lg shadow-md hidden">
+            <h3 class="text-xl font-semibold">No Patient Records Found</h3>
+            <p class="text-gray-500 mt-2">Click "Add New Patient" to get started.</p>
+        </div>
+    </main>
+
+    <!-- Notification Toast -->
+    <div id="toast" class="fixed bottom-5 right-5 bg-green-500 text-white py-2 px-5 rounded-lg shadow-xl text-center hidden fade-in">
+        <p id="toastMessage"></p>
+    </div>
+    
+    <!-- Delete Confirmation Modal -->
+    <div id="deleteModal" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center p-4 hidden fade-in">
+        <div class="card rounded-lg shadow-2xl w-full max-w-sm p-6 text-center">
+            <h2 class="text-xl font-bold mb-4">Are you sure?</h2>
+            <p class="text-gray-600 mb-6">Do you really want to delete this patient record? This action cannot be undone.</p>
+            <div class="flex justify-center gap-4">
+                <button id="cancelDeleteBtn" class="bg-gray-300 text-gray-800 font-semibold py-2 px-6 rounded-lg hover:bg-gray-400">Cancel</button>
+                <button id="confirmDeleteBtn" class="bg-red-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-red-700">Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
