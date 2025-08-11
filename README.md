@@ -2,8 +2,6 @@
 
 A full-stack web application for managing patient records, built with FastAPI and a modern vanilla JavaScript frontend. This system provides a clean, intuitive interface for creating, viewing, updating, deleting, and sorting patient data.
 
-![Patient Management System Screenshot]([https://placehold.co/800x400/3b82f6/ffffff?text=Your+App+Screenshot+Here](https://drive.google.com/file/d/16enGSe8VVhvbId9T4lnA-FV5WqudSxIa/view?usp=sharing)
-
 ---
 
 ## ✨ Features
