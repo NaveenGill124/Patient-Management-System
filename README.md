@@ -24,11 +24,8 @@ Here's a look at the application in action.
 
 | Home Page                                                                                             | View Patients Page                                                                                               |
 | ----------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| *Your Screenshot Here* <br> (A clean landing page introducing the system.)                            | *Your Screenshot Here* <br> (The main dashboard displaying all patient cards.)                                   |
-| **Create Patient Page** | **Edit Patient Page** |
-| *Your Screenshot Here* <br> (A dedicated form for adding new patient records.)                        | *Your Screenshot Here* <br> (A pre-filled form for updating an existing patient's details.)                    |
-| **Delete Confirmation** | **Success Notification** |
-| *Your Screenshot Here* <br> (A safe, user-friendly modal to confirm deletions.)                       | *Your Screenshot Here* <br> (A toast notification confirming a successful action.)                               |
+| ![Home Page Screenshot](./home.png)                            | ![View Page Screenshot](./view_patients.png)                                   |
+                             |
 
 ---
 
